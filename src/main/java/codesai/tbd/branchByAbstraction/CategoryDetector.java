@@ -2,10 +2,7 @@ package codesai.tbd.branchByAbstraction;
 
 import codesai.tbd.parallelchange.Product;
 
-public class CategoryDetector {
+public interface CategoryDetector {
 
-    public static String detect(Product p) {
-        if(p.name.equals("tv")) return "technology";
-        return "other";
-    }
+    String detect(Product p);
 }
